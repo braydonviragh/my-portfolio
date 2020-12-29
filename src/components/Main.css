@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,300&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+body,
+section,
+main,
+header,
+footer {
+  font-family: "Montserrat", sans-serif;
+  background: #131313;
+  color: #fff;
+  width: 100%;
+}
+.main__container,
+.services__container,
+.about__container,
+.contact__container {
+  position: absolute;
+  top: 100px;
+  left: 120px;
+}
+
+.main__container h1:first-child {
+  margin-bottom: 10px;
+  z-index: -1;
+  animation: top 0.5s linear;
+  border-top: 3px solid #bc13fe;
+}
+.main__container h1:nth-child(3) {
+  margin-bottom: 20px;
+  animation: left 0.8s linear;
+}
+.main__container h1:nth-child(4) {
+  font-size: 1.2rem;
+  color: #999;
+  animation: bottom 0.5s linear;
+  margin-bottom: 10px;
+}
+.main__container button {
+  margin-top: 40px;
+  width: 130px;
+  height: 40px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #bc13fe;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  animation: bottom 0.7s linear;
+}
+
+/*animations*/
+@keyframes top {
+  0% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bottom {
+  5% {
+    transform: translateY(300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Robot Animation */
+:root {
+  --pixel-size: 13;
+}
+.Character {
+  width: calc(32px * var(--pixel-size));
+  height: calc(32px * var(--pixel-size));
+  background: #131313;
+  overflow: hidden;
+  position: absolute;
+  top: 25px;
+  right: 7em;
+  z-index: -5;
+}
+.Character_spritesheet {
+  animation-delay: 2s;
+  animation: moveSpritesheet 1s steps(4) infinite;
+  width: calc(128px * var(--pixel-size));
+  z-index: -5;
+}
+
+/*fixes the blurry image */
+.pixelart {
+  image-rendering: pixelated;
+}
+@keyframes moveSpritesheet {
+  from {
+    transform: translate3d(0px, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.cls-1 {
+  fill: #0076b2;
+}
+.cls-2 {
+  fill: #fff;
+}
+.mailbox {
+  fill: #ffcc33;
+}
+.mailbox2 {
+  fill: #fedb41;
+}
+.mailbox3 {
+  fill: #fea832;
+}
+.contact__icons {
+  display: flex;
+  flex-direction: row;
+}
+.contact__email,
+.contact__linkedin,
+.contact__github {
+  padding-right: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Character {
+    display: none;
+  }
+  .Character_spritesheet {
+    display: none;
+  }
+  .main__container {
+    width: 95%;
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 724px) {
+  .main__container {
+    width: 95%;
+    left: 0px;
+  }
+}

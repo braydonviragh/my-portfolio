@@ -1,0 +1,314 @@
+.portfolio__container {
+  height: 400px;
+  width: 1000px;
+  position: relative;
+  top: 0.5em;
+
+  z-index: 2;
+  left: 7em;
+  animation: left 1s;
+}
+@keyframes left {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.portfolio__container img {
+  width: 64px;
+  z-index: 99;
+}
+
+.portfolio__title {
+  position: absolute;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.project__slide img {
+  width: 400px;
+  height: auto;
+}
+
+.website__container {
+  position: relative;
+  top: 100px;
+  animation: left 2s;
+}
+.website__container img {
+  width: 400px;
+}
+
+.website__middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.website__text {
+  background-color: blueviolet;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.website__container:hover .website__image {
+  opacity: 0.3;
+}
+
+.website__container:hover .website__middle {
+  opacity: 1;
+}
+
+.shop__container {
+  position: absolute;
+  left: 550px;
+  top: 100px;
+  animation: left 3s;
+}
+.shop__container img {
+  width: 400px;
+}
+
+.shop__middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 75%;
+  left: 200px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.shop__text {
+  background-color: blueviolet;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.shop__container:hover .shop__image {
+  opacity: 0.3;
+}
+
+.shop__container:hover .shop__middle {
+  opacity: 1;
+}
+
+.game__container {
+  position: absolute;
+  top: 350px;
+  left: -80px;
+  animation: left 2s;
+}
+.game__container img {
+  width: 600px;
+}
+
+.game__middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 300px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.game__text {
+  background-color: blueviolet;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.game__container:hover .game__image {
+  opacity: 0.3;
+}
+
+.game__container:hover .game__middle {
+  opacity: 1;
+}
+
+.maps__container {
+  position: absolute;
+  animation: left 4s;
+  left: 550px;
+  top: 400px;
+}
+.maps__container img {
+  width: 400px;
+}
+
+.maps__middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 75%;
+  left: 200px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.maps__text {
+  background-color: blueviolet;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.maps__container:hover .maps__image {
+  opacity: 0.3;
+}
+
+.maps__container:hover .maps__middle {
+  opacity: 1;
+}
+
+/*MOBILE VERSION MOBILE VERSION MOBILE VERSION MOBILE VERSION MOBILE VERSION MOBILE VERSION */
+@media only screen and (max-width: 1024px) {
+  .portfolio__container {
+    position: absolute;
+    width: 95%;
+    height: 1200px;
+    top: 50px;
+    left: 20px;
+  }
+  .project__slides {
+    left: 20px;
+    padding-top: 100px;
+    display: flex;
+  }
+
+  .project__slides img {
+    width: 100%;
+    height: auto;
+    top: 100px;
+    left: 100px;
+  }
+
+  .website__container {
+    top: 30%;
+    left: 20px;
+    animation: left 2s;
+  }
+  .website__container img {
+    width: 50%;
+    height: auto;
+  }
+
+  .website__middle {
+    display: none;
+  }
+
+  .website__text {
+    display: none;
+  }
+
+  .shop__container {
+    position: absolute;
+    left: 20px;
+    top: 350px;
+  }
+  .shop__container img {
+    width: 50%;
+    height: auto;
+  }
+
+  .shop__middle {
+    display: none;
+  }
+
+  .shop__text {
+    display: none;
+  }
+
+  .game__container {
+    top: 575px;
+    left: 0px;
+    margin-left: -60px;
+  }
+  .game__container img {
+    width: 70%;
+    height: auto;
+  }
+  .game__middle {
+    display: none;
+  }
+
+  .game__text {
+    display: none;
+  }
+
+  .maps__container {
+    left: 20px;
+    top: 900px;
+  }
+  .maps__container img {
+    width: 50%;
+    height: auto;
+  }
+
+  .maps__middle {
+    display: none;
+  }
+
+  .maps__text {
+    display: none;
+  }
+  .portfolio__title {
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 724px) {
+  .maps__container img {
+    width: 100%;
+    height: auto;
+  }
+  .game__container img {
+    width: 120%;
+    height: auto;
+  }
+  .game__container {
+    margin-left: -90px;
+  }
+  .shop__container img {
+    width: 100%;
+    height: auto;
+  }
+  .website__container img {
+    width: 100%;
+    height: auto;
+  }
+  .project__slides {
+    left: 20px;
+    padding-top: 100px;
+    display: flex;
+    width: 100%;
+  }
+  .maps__container {
+    left: -10px;
+    top: 900px;
+  }
+  .shop__container {
+    position: absolute;
+    left: -10px;
+    top: 350px;
+  }
+  .website__container {
+    left: -10px;
+  }
+}

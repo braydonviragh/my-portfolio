@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HomeGreenery</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="page-wrapper">
+        <div id="logo">
+          <h2 id="site-name">
+            <a href="index.html">
+              <span id="home">HOME</span><span id="green">GREENERY</span>
+            </a>
+          </h2>
+        </div>
+        <nav id="main-navigation">
+          <h3 class="hidden">Main navigation</h3>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Plants</a></li>
+            <li><a href="#">Tips</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="button">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+ 
+    <div class="page-wrapper">
+      <main id="main">
+        <h1 class="featured-title">Find your green thumb</h1>
+        <div class="columns">
+          <article class="col-50">
+            <h2 class="centered">Why grow plants at home?</h2>
+            <img class="inline-img" src="images/potted-plant.jpg" alt="Spider plant">
+            <ul class="inline-content">
+              <li>Spruce up your indoor space while cleaning the air at the same time.</li>
+              <li>Boost your mood and creativity.</li>
+              <li>Grow your own food and eat fresher.</li>
+            </ul>
+          </article>
+          <article class="col-50">
+            <h2 class="centered">New to gardening?</h2>
+            <p>No problem. Take advantage of our <a href="#">plant
+               growing resources</a>.</p>
+            <p><a href="#">Create an account</a> to get access to
+               your own gardener's journal and garden-planning
+               tools. Get customized planting charts.</p>
+            <div class="centered"><a class="button" href="#">Register now</a></div>
+          </article>
+        </div>
+        <section class="columns centered" id="resources">
+          <h2 class="col-100">Find what you're looking for</h2>
+          <article class="col-33">
+            <h3><a href="#">Seeds</a></h3>
+            <img src="images/seedlings.jpg" alt="Hands cupping small seedlings">
+            <p>Where to get seeds.</p>
+            <div><a href="#" class="button">Learn about seeds</a></div>
+          </article>
+          <article class="col-33">
+            <h3><a href="#">Plant Resource</a></h3>
+            <img src="images/journal-book.jpg" alt="Open gardener's journal with pen">
+            <p>Look up a plant and growing info.</p>
+            <div><a href="#" class="button">Plant index</a></div>
+          </article>
+          <article class="col-33">
+            <h3><a href="#">Growing Food</a></h3>
+            <img src="images/veg-garden.jpg" alt="Outdoor vegetable garden">
+            <p>Learn about growing your own food.</p>
+            <div><a href="#" class="button">Food gardening</a></div>
+          </article>
+        </section>
+        <section id="subscribe" class="centered">
+          <h2>Stay up to date</h2>
+          <p>Get the latest gardening articles and tips by subscribing to our newsletters.</p>
+          <form id="subscribe-form" method="post" action="#">
+            <div class="email-wrapper">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john.smith@example.com">
+            </div>
+            <fieldset class="interests-wrapper">
+              <legend>Your interests</legend>
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="tips" name="interests" value="tips">
+                <label for="tips">Tips</label>
+              </div>
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="news" name="interests" value="news">
+                <label for="news">News</label>
+              </div>
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="tools" name="interests" value="tools">
+                <label for="tools">Tools</label>
+              </div>
+            </fieldset>
+            <button type="submit" id="subscribe-btn" name="subscribe-btn">Subscribe now</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <footer id="footer">
+      <div class="page-wrapper">
+        <nav id="footer-navigation">
+          <h2 class="hidden">Footer navigation</h2>
+          <ul class="menu">
+            <li>
+              <a href="">Plants</a>
+              <ul>
+                <li><a href="#">Plant index</a></li>
+                <li><a href="#">Featured plant</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Resources</a>
+              <ul>
+                <li><a href="#">Zone maps</a></li>
+                <li><a href="#">Planting charts</a></li>
+                <li><a href="#">Garden structures</a></li>
+                <li><a href="#">Suppliers</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Legal</a>
+              <ul>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div id="copyright">&copy;  This is a fake website developed by Braydon Viragh.</div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+.skills__para {
+  width: 600px;
+  animation: left 1.5s;
+}
+@keyframes left {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.header__game {
+  margin-right: 10px;
+}
+.skills__icons {
+  display: flex;
+  justify-content: center;
+}
+.skills__icons svg {
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+.skills__icons svg:first-child {
+  margin-right: 0px;
+}
+.skills__icons svg:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+.skills__highlight {
+  font-weight: bold;
+  text-decoration: underline;
+  color: blueviolet;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main__container {
+    width: 95%;
+    left: 20px;
+  }
+
+  .skills__para {
+    width: 95%;
+  }
+  .skills__icons {
+    margin-top: -10px;
+  }
+  .skills__icons svg {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 724px) {
+  .skills__icons svg {
+    width: 64px;
+  }
+}

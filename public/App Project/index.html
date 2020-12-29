@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walk with Braydon: Toronto Trails</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="bodycontainer">
+        <div class="welcome">
+            <div class="header__logo">
+                <img src="images/Logo.png" alt="">
+            </div>
+            <h2>Welcome to Walks with Braydon! Explore and select your route below. Enjoy!</h2>
+        </div>
+    </div>
+    <section class="map">
+        <div id="map" class="mapcontainer">
+            <!--insert google map API here-->
+        </div>
+    </section>
+    <section class="selection">
+        <div class="selectionbuttons">
+            <button id="button1" type="submit">Walk 1</button>
+            <button id="button2" type="submit">Walk 2</button>
+            <button id="button3" type="submit">Walk 3</button>
+            <button type="submit">Coming soon (custom walk)</button>
+        </div>
+    </section>
+    <section class="walkinginfo">
+        <div class="walkinginfocontainer">
+            <div id="walk1">
+                <h2>Walk 1: Don Trail: Toronto, Ontario</h2>
+                <p>This trail is a favourite of mine! Start by making your way to the Riverdale Farm located on the west side of the DVP. You can start your walk saying hi to the farm animals and continue down the park hill and onto the Don Trail. As you start to walk north up the trail you'll get to experience some gritty and raw parts of the city where graffiti spray paint is the leading style of expression. You will hit a loop point once the trail makes you cross the road. Feel free to loop back and finish your walk by exploring the other side of the bridge ! (Riverdale Park East).</p>
+            </div>
+            <div id="walk2">
+                <h2>Walk 2: Lakeshore: Toronto, Ontario</h2>
+                <p>Ahhhhh fresh air by the water, nothing better....so prepare for 40+ minutes of it. Take this trail by starting off at Bay & Queen Quay and make your way west, experiencing the sights and sounds of Toronto's famous waterfront. Past the waterfront you will get to enjoy several parks, beaches and will finish by walking past the Humber Bridge, a Toronto photographing hotspot!!</p>
+            </div>
+            <div id="walk3">
+                <h2>Walk 3: Bruce Trail (Collingwood, Ontario) </h2>
+                <p>This trail is only for the hardcore fans of walking like myself. Despite being a two hour drive north of downtown Toronto I can't recommend Nottawasauga Lookout Trail enough. You get an extra bonus on this trail as there are several tall rock caves to explore while being truly submersed in Ontario nature.</p>
+            </div>
+        </div>
+
+    </section>
+    </div>
+    <footer>
+        <h4>Pet Project by Bradon Viragh</h4>
+    </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdNXfej7M_JRxKSy9su67z-xDC1wz7f8U&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script src="script.js"></script>
+</body>
+</html>
